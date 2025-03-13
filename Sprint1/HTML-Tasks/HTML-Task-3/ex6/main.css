@@ -1,0 +1,52 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+body {
+    background-color: rgb(45, 128, 196);
+}
+.workarea {
+    background-color: white;
+    border-radius: 8px;
+    margin: 10 30 10 30;
+}
+.title-space {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.title-space > nav > ul {
+    margin-top: 11;
+}
+.title-space > nav > ul > li {
+    display: inline-block;
+    padding-right: 15px;
+}
+.blog-list {
+    width: 60%;
+    padding: 20;
+    display: inline-block;
+}
+.blog-list > section > span {
+    display: inline-block;
+    padding: 5 0 10 0;
+}
+aside {
+    margin: 20px;
+    width: 25%;
+    background-color: yellow;
+    padding: 15px;
+    float: right;
+}
+.heading-aside {
+    background-color: orange;
+    margin-top: -5px;
+    color: white;
+    padding: 5px;
+}
+aside > ul {
+    margin-left: 30px;
+}
+.blog-list > section > hr {
+    margin: 10 0 10 0;
+}

@@ -1,0 +1,25 @@
+* {
+    font-family: arial;
+    padding: 0px;
+    margin: 0px;
+}
+body {
+    background-color: burlywood;
+    padding: 10px;
+}
+h3, h1 {
+    color: cadetblue;
+    padding: 20 0 20 0;
+}
+li {
+    margin-left: 20px;
+}
+p {
+    display: inline-block;
+}
+img {
+    height: 200px;
+}
+.mood-listing {
+    display: flex;
+}

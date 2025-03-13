@@ -1,0 +1,36 @@
+* {
+    font-family: arial;
+    margin: 0px;
+    padding: 0px;
+}
+img {
+    float: right;
+    width: 25%;
+    margin-right: 20;
+    margin-top: -350px;
+}
+body {
+    padding: 15px;
+}
+p {
+    padding: 15 0 15 0;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 3px;
+}
+span {
+    font-family: cursive;
+}
+th {
+    text-align: center;
+}
+h1 {
+    background-color: rgb(164, 198, 241);
+    padding: 5;
+    color: rgb(48, 116, 206);
+}
+.left-content {
+    width: 70%;
+}

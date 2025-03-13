@@ -1,0 +1,93 @@
+<html>
+  <head>
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <div class="main-workarea">
+      <h2>Registration Form</h2>
+      <h1>Please Fill and Submit Form</h1>
+
+      <form>
+        <label for="name">Name: </label>
+        <input type="text" name="name" id="name" required />
+
+        <br />
+
+        <label for="email">Email: </label>
+        <input type="email" name="email" id="email" required />
+
+        <br />
+
+        <label for="age">Age: </label>
+        <input type="number" name="age" id="age" min="1" required />
+
+        <br />
+
+        <label for="dob">Date of Birth: </label>
+        <input type="date" name="dob" id="dob" required />
+
+        <br />
+
+        <label for="phno">Phone Number: </label>
+        <select name="code" id="code">
+          <option value="+91">+91</option>
+          <option value="other">Other</option>
+        </select>
+        <input type="tel" name="phno" id="phno" pattern="[0-9]{10}" required />
+
+        <br />
+
+        <label>Gender: </label>
+        <input type="radio" name="gender" id="male" value="male" />
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="female" value="female" />
+        <label for="female">Female</label>
+
+        <br />
+
+        <label>Skill Level: </label>
+        <input type="radio" name="skill" id="b" value="beginner" />
+        <label for="b">Beginner</label>
+        <input type="radio" name="skill" id="i" value="intermediate" />
+        <label for="i">Intermediate</label>
+        <input type="radio" name="skill" id="a" value="advanced" />
+        <label for="a">Advanced</label>
+
+        <br />
+
+        <label for="color">Favorite Color: </label>
+        <input type="color" name="color" id="color" />
+
+        <br />
+
+        <label for="fname">Father's Name: </label>
+        <input type="text" name="fname" id="fname" />
+
+        <br />
+
+        <label>Select your language: </label>
+        <input type="radio" name="lang" id="eng" value="english" />
+        <label for="eng">English</label>
+        <input type="radio" name="lang" id="tam" value="tamil" />
+        <label for="tam">Tamil</label>
+        <input type="radio" name="lang" id="mal" value="malayalam" />
+        <label for="mal">Malayalam</label>
+
+        <br />
+
+        <label for="hobbies">Hobbies: </label>
+        <input type="text" name="hobbies" id="hobbies" />
+
+        <br />
+
+        <label for="address">Address: </label>
+        <textarea name="address" id="address"></textarea>
+
+        <br />
+
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+  </body>
+</html>

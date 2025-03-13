@@ -1,0 +1,32 @@
+*{
+    font-family: Arial;
+    padding: 0;
+    margin: 0;
+}
+.website-name{
+    background-color: grey;
+}
+.nav-bar{
+    background-color: black;
+}
+.nav-bar > ul > li{
+    color: white;
+    display: inline-block;
+    padding: 5 10 5 10;
+    border-right: 1px solid white;
+}
+aside {
+    width: fit-content;
+    float: right;
+    margin-right: 50px;
+}
+aside > ul{
+    padding-top: 10px ;
+    margin-left: 20px;
+}
+.main-workarea{
+    margin: 10 50 10 50;
+}
+.main-workarea > p{
+    margin: 10 0 0 0;
+}

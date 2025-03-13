@@ -1,0 +1,39 @@
+* {
+    font-family: arial;
+    margin: 0;
+    padding: 0;
+}
+.heading-section {
+    text-align: center;
+}
+.small-heading-section {
+    width: 80%;
+    padding-top: 10px;
+    margin: auto;
+    text-align: center;
+}
+.small-title {
+    margin-top: -22px;
+    display: inline-block;
+    background-color: white; 
+}
+.gallery {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+.gallery img {
+    width: 500px;
+    height: 300px;
+    padding: 20 5 0 5;
+    object-fit: fill;
+}
+.gallery p, hr {
+    margin: auto;
+    width: 90%;
+}
+.footer-section {
+    width: 90%;
+    text-align: center;
+    margin: auto;
+}
