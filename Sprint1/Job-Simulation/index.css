@@ -1,0 +1,153 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    background-color: #3f3f3f;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.header-logo {
+    height: 60px;
+    padding: 0px 10px;
+}
+
+.header-logo-title {
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+li a {
+    text-decoration: none;
+    padding: 10px;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover,
+nav ul .active a {
+    color: #f2a900;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+i {
+    font-size: 30px;
+}
+
+body {
+    background-color: #efefef;
+}
+
+main {
+    min-height: 80vh;
+    background-color: white;
+    border-radius: 20px;
+    padding: 30px;
+    margin: 20px 50px;
+    text-align: center;
+}
+
+.welcome-message {
+    width: 40%;
+    margin: auto;
+}
+
+.main-columns {
+    padding-top: 20px;
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+.main-intro {
+    align-content: center;
+    line-height: 25px;
+    padding: 15px;
+    border: 3px solid rgb(207, 207, 207);
+    border-radius: 15px;
+}
+
+.main-intro-hashtags {
+    font-weight: bold;
+    color: grey;
+}
+
+hr {
+    margin: 10px 0px;
+}
+
+.services-offered{
+    display: block;
+    padding: 15px;
+    border: 3px solid rgb(207, 207, 207);
+    border-radius: 15px;
+}
+
+.services-offered h2 {
+    padding-bottom: 5px;
+}
+
+footer {
+    background: #494949;
+    color: white;
+    padding: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.social-media {
+    display: flex;
+    gap: 10px;
+}
+
+.address {
+    line-height: 25px;
+    display: flex;
+    gap: 50px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .main-columns {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .services-offered, .main-intro {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+}

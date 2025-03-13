@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+    min-height: calc(100vh - 60px);
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.container {
+    min-height: 100vh;
+    gap: 20px;
+    padding: 20px;
+}
+
+.upper-part {
+    display: grid;
+    grid-template-areas:
+        "intro-copy hero-image"
+        "intro-copy call-to-action";
+    gap: 20px;
+    padding: 20px;
+}
+
+.lower-part {
+    display: grid;
+    grid-template-areas:
+        "more-copy call-to-action";
+    gap: 20px;
+    padding: 20px;
+}
+
+.intro-copy {
+    grid-area: intro-copy;
+    background: #4682b4;
+    color: white;
+    padding: 20px;
+}
+
+.hero-image {
+    grid-area: hero-image;
+    background: #a9a9a9;
+    color: white;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.call-to-action {
+    grid-area: call-to-action;
+    background: #ffff00;
+    color: black;
+    padding: 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1em;
+}
+
+.features {
+    grid-area: features;
+    background: #4682b4;
+    color: white;
+    padding: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.more-copy {
+    grid-area: more-copy;
+    background: #4682b4;
+    color: white;
+    padding: 20px;
+}
+
+footer {
+    grid-area: footer;
+    background: #34495e;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}

@@ -1,0 +1,135 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background: #f0f0f0;
+    color: #333;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    background: #9370db;
+    color: white;
+    padding: 20px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    margin: 0 15px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+a:hover {
+    color: #e6e6fa;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        "features features features"
+        "column-one column-two column-three"
+        "footer footer footer";
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+    min-height: calc(100vh - 100px);
+}
+
+.features {
+    grid-area: features;
+    background: #f0f0f0;
+    color: #333;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.animated-box {
+    width: 100px;
+    height: 100px;
+    background: #ff4500;
+    animation: bounce 2s infinite;
+}
+
+.animated-text {
+    font-size: 1.5em;
+    animation: fadeIn 3s infinite;
+}
+
+.column-one, .column-two, .column-three {
+    background: #f0f0f0;
+    color: #333;
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    grid-area: footer;
+    background: #f0f0f0;
+    color: #333;
+    padding: 20px;
+    text-align: center;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+    40% { transform: translateY(-30px); }
+    60% { transform: translateY(-15px); }
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+@media (max-width: 600px) {
+    .grid-container {
+        grid-template-areas:
+            "features"
+            "column-one"
+            "column-two"
+            "column-three"
+            "footer";
+        grid-template-columns: 1fr;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .features, .column-one, .column-two, .column-three {
+        padding: 10px;
+    }
+
+    .animated-box {
+        width: 80px;
+        height: 80px;
+        animation: bounce 2s infinite;
+    }
+
+    .animated-text {
+        font-size: 1.2em;
+        animation: fadeIn 3s infinite;
+    }
+
+    header, nav, footer {
+        padding: 10px;
+    }
+}
