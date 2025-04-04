@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox Task 5</title>
+    <style>
+      body {
+        margin: 0;
+      }
+
+      h1 {
+        margin-top: 0px;
+      }
+
+      li {
+        display: inline-block;
+        margin: 0px;
+        padding-right: 10px;
+      }
+
+      .layout {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+      }
+
+      header,
+      footer,
+      h1 {
+        background-color: #bbb;
+        padding: 20px;
+        text-align: center;
+      }
+
+      .three-columns {
+        display: flex;
+        justify-content: space-between;
+        flex: 1;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        background-color: #f9f9f9;
+      }
+
+      .three-columns div {
+        background-color: #ccc;
+        padding: 20px;
+        flex: 1;
+        margin: 0 10px;
+        text-align: center;
+      }
+
+      .three-columns div:first-child {
+        margin-left: 0;
+      }
+
+      .three-columns div:last-child {
+        margin-right: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="layout">
+      <h1>Logo</h1>
+      <header>
+        <nav>
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Products</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      <section class="three-columns">
+        <div>Column One</div>
+        <div>Column Two</div>
+        <div>Column Three</div>
+      </section>
+      <footer>&copy;Copyright 2011</footer>
+    </div>
+  </body>
+</html>
