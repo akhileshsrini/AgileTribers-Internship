@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox Alignments - Exercise 3</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 20px;
+      }
+
+      .container {
+        width: 80%;
+        height: 100px;
+        border: 2px solid black;
+        display: flex;
+        background-color: lightgray;
+      }
+
+      .box {
+        width: 80px;
+        height: 80px;
+        background-color: lightgreen;
+        border: 1px solid black;
+      }
+
+      /* Different Justify Content Variations */
+      .justify-center {
+        justify-content: center;
+      }
+      .justify-start {
+        justify-content: flex-start;
+      }
+      .justify-end {
+        justify-content: flex-end;
+      }
+      .justify-between {
+        justify-content: space-between;
+      }
+      .justify-around {
+        justify-content: space-around;
+      }
+      .justify-evenly {
+        justify-content: space-evenly;
+      }
+
+      /* Different Align Items Variations */
+      .align-center {
+        align-items: center;
+      }
+      .align-start {
+        align-items: flex-start;
+      }
+      .align-end {
+        align-items: flex-end;
+      }
+
+      /* justify-self applied when space is available */
+      .self-container {
+        width: 80%;
+        height: 100px;
+        border: 2px solid black;
+        display: flex;
+        justify-content: space-between;
+        background-color: lightgray;
+      }
+
+      .self-box {
+        width: 80px;
+        height: 80px;
+        background-color: lightgreen;
+        border: 1px solid black;
+      }
+
+      .self-start {
+        justify-self: flex-start;
+      }
+      .self-end {
+        justify-self: flex-end;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Flexbox Justify Content Examples</h2>
+
+    <div class="container justify-center">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+
+    <div class="container justify-start">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+
+    <div class="container justify-end">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+
+    <div class="container justify-between">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+
+    <div class="container justify-around">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+
+    <div class="container justify-evenly">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+
+    <h2>Flexbox Align Items Examples</h2>
+
+    <div class="container align-center">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+
+    <div class="container align-start">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+
+    <div class="container align-end">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+
+    <h2>Flexbox Justify-Self Examples (When Space is Available)</h2>
+
+    <div class="self-container">
+      <div class="self-box self-start"></div>
+      <div class="self-box"></div>
+      <div class="self-box self-end"></div>
+    </div>
+  </body>
+</html>
