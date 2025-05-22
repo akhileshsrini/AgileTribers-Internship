@@ -1,0 +1,85 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f5f5f5;
+  padding: 40px;
+}
+
+.ticket {
+  display: flex;
+  width: 800px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  background: url('/mnt/data/ade502ff-79ba-4a66-a17d-ad6b8a34ffbb.png') no-repeat center/cover;
+}
+
+/* Left side */
+.ticket-left {
+  flex: 2;
+  padding: 20px;
+  background-color: rgba(255,255,255,0.9);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+
+.header {
+  font-size: 20px;
+  color: #0077c0;
+  font-weight: bold;
+}
+
+.info, .bottom {
+  font-size: 14px;
+  margin-top: 15px;
+}
+
+.route {
+  font-size: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.plane {
+  font-size: 88px;
+}
+
+/* Right side */
+.ticket-right {
+  flex: 1;
+  background-color: #142850;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+
+.right-header {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.right-info {
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.barcode {
+  height: 50px;
+  background: repeating-linear-gradient(
+    to right,
+    white,
+    white 2px,
+    black 2px,
+    black 4px
+  );
+  margin-top: 20px;
+  border-radius: 4px;
+}
