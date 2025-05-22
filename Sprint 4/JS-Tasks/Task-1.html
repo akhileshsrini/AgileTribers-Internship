@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>JavaScript Events Tasks</title>
+    <style>
+      #mouseDiv {
+        width: 200px;
+        height: 100px;
+        background-color: #cce5ff;
+        text-align: center;
+        line-height: 100px;
+        margin-top: 10px;
+        user-select: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Task 1: Button Click Event</h2>
+    <button id="btnClick">Click Me</button>
+
+    <h2>Task 2: Button Click - Sum of Two Variables</h2>
+    <button id="btnSum">Sum Numbers</button>
+
+    <h2>Task 3: Input Box Value Retrieval (Console Log)</h2>
+    <input type="text" id="inputTask3" />
+    <button id="btnInput3">Show Input in Console</button>
+
+    <h2>Task 4: Input Box Value Display (Paragraph Tag)</h2>
+    <input type="text" id="inputTask4" />
+    <button id="btnInput4">Display Input Below</button>
+    <p id="displayParagraph"></p>
+
+    <h2>Task 5: Input Box - OnChange Event</h2>
+    <input type="text" id="inputTask5" />
+
+    <h2>Task 6: Double Click Event</h2>
+    <button id="btnDblClick">Double Click Me</button>
+
+    <h2>Task 7: Mouse Enter and Leave Event</h2>
+    <div id="mouseDiv">Hover over me</div>
+    <p id="mouseMsg"></p>
+
+    <h2>Task 8: Key Press and Key Release Event</h2>
+    <p>Press any key and watch console logs</p>
+
+    <script>
+      // Task 1
+      document.getElementById("btnClick").onclick = () => {
+        console.log("Button Clicked!");
+      };
+
+      // Task 2
+      let num1 = 10;
+      let num2 = 20;
+      document.getElementById("btnSum").onclick = () => {
+        let sum = num1 + num2;
+        console.log("Sum:", sum);
+      };
+
+      // Task 3
+      document.getElementById("btnInput3").onclick = () => {
+        let inputVal = document.getElementById("inputTask3").value;
+        console.log(inputVal);
+      };
+
+      // Task 4
+      document.getElementById("btnInput4").onclick = () => {
+        let inputVal = document.getElementById("inputTask4").value;
+        document.getElementById("displayParagraph").innerHTML = inputVal;
+      };
+
+      // Task 5
+      document.getElementById("inputTask5").onchange = (event) => {
+        console.log("Input Changed: " + event.target.value);
+      };
+
+      // Task 6
+      document.getElementById("btnDblClick").ondblclick = () => {
+        console.log("Button was double-clicked!");
+      };
+
+      // Task 7
+      const mouseDiv = document.getElementById("mouseDiv");
+      const mouseMsg = document.getElementById("mouseMsg");
+
+      mouseDiv.onmouseenter = () => {
+        mouseMsg.textContent = "Mouse entered!";
+      };
+
+      mouseDiv.onmouseleave = () => {
+        mouseMsg.textContent = "Mouse left!";
+      };
+
+      // Task 8
+      document.addEventListener("keydown", () => {
+        console.log("Key pressed!");
+      });
+
+      document.addEventListener("keyup", () => {
+        console.log("Key released!");
+      });
+    </script>
+  </body>
+</html>
