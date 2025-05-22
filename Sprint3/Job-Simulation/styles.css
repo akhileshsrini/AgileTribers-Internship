@@ -1,0 +1,74 @@
+body {
+  font-family: 'Georgia', serif;
+  background: #fdfcfb;
+  margin: 0;
+  padding: 20px;
+  overflow-x: hidden;
+}
+
+section {
+  margin: 20px auto;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.passport-cover {
+  background: url('assets/background.jpg') no-repeat center/cover;
+  height: 300px;
+  text-align: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.passport-inner {
+  background: white;
+  padding: 20px;
+}
+
+.details-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.text-section {
+  flex: 1;
+}
+
+.photo-section img {
+  width: 150px;
+  border-radius: 8px;
+}
+
+.stamp {
+  text-align: right;
+  font-size: 18px;
+  color: #999;
+  margin-top: 20px;
+}
+
+.boarding-pass {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  padding: 20px;
+}
+
+.rsvp-info {
+  flex: 2;
+}
+
+.barcode {
+  flex: 1;
+  text-align: center;
+}
+
+.return-address {
+  flex: 1;
+  font-size: 14px;
+  color: #555;
+}
